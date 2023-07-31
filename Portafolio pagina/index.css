@@ -1,0 +1,447 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+ body{
+     font-family: sans-serif;
+     margin:0;
+
+ }
+
+ h1{ font-size: 2.5em;
+}
+ h2{ font-size: 2.7em;}
+ h3{ font-size: 2em;}
+ 
+ #hero{
+display: flex;
+
+ }
+
+ button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+   cursor: pointer;
+    color:rgb(234, 234, 234) ;
+    background-color: rgb(229, 151, 24) ;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   
+   
+ }
+
+ button :hover{
+    background-color:rgb(125, 71, 0)
+ }
+ .container{
+    max-width: 1400px;
+    margin: auto;
+ }
+
+.color-acento{
+    color: rgb(255, 145, 0);
+}
+header{
+    background-color: rgb(242, 240, 240);
+}
+
+header.logo{
+   margin: 0%;
+   padding: 25px 30px;
+   font-size: 1.6em;
+     font-weight: bold;
+     
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    color:rgb(255, 102, 0)
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.hero #portafolio{
+    cursor: pointer;
+   
+}
+#sobremi{
+   
+   text-align: center;
+   padding: 200px 12px;
+   
+ 
+}
+
+#portafolio{
+    background-color: rgba(208, 172, 106, 0.462);
+    color: white;
+    text-align: center;
+}
+
+#portafolio .container{
+    padding: 150px 12px;
+}
+
+#portafolio h2{
+   margin-top: 0%;
+    font-size: 3.2em;
+   
+}
+
+
+
+#portafolio .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    cursor:pointer;
+    
+   
+}
+ .carta:first-child:hover{
+    
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/trabajo1.png");
+   
+    
+
+}
+
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/trabajo2.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/trabajo3.jpg");
+
+}
+
+#contacto .container{
+    padding: 150px 12px;
+}
+
+#contacto{
+    background-color: rgb(18, 18, 18);
+    
+}
+header .logo   {
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(23, 5, 40);
+    font-size: 1.6em;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+    text-align: center;
+}
+footer.container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+ /* Estilos para la sección de contacto */
+ #contacto {
+    background-color: #252323;
+    padding: 20px;
+    
+    color: #d8d8d8;
+}
+
+/* Estilo para el título "Contáctame" */
+.titulo h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Espacio inferior para separar del formulario */
+    text-align: left;
+}
+
+/* Estilo para el color de acento en el título */
+.color-acento {
+    color: #ff7300; /* Puedes cambiar este color por el que desees */
+}
+
+/* Estilos para los espacios de entrada */
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+    
+
+/* Estilos para el botón de enviar */
+#contacto input[type="submit"] {
+    background-color: #af784c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo del botón al pasar el cursor por encima */
+#contacto input[type="submit"]:hover {
+    background-color: #943f0a;
+}
+#portafolio .carta :hover{
+    color: rgba(255, 86, 2, 0.833);
+    filter: brightness(120%);
+        }
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    
+    #sobremi .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #sobremi .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    #sobremi h2{
+        margin-bottom: 20px;
+    }
+
+    #portafolio .programas{
+   
+        justify-content: center;
+        display: flex;
+        
+       
+    }
+
+
+    #portafolio h2{
+      
+        font-size: 4em;
+        
+    }
+
+    #portafolio h3{
+        
+        display: block;
+        margin-bottom: 30px;
+       
+    }
+
+    #portafolio .carta{
+        padding: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        
+   
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/trabajo1.png");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/trabajo2.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/trabajo3.jpg");
+
+    }
+
+    #portafolio .carta :hover{
+color: rgba(255, 86, 2, 0.833);
+filter: brightness(120%);
+    }
+    
+    
+    /* Estilos para la sección de contacto */
+#contacto {
+    background-color: #252323;
+    padding: 20px;
+    
+    color: #d8d8d8;
+}
+
+/* Estilo para el título "Contáctame" */
+.titulo h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Espacio inferior para separar del formulario */
+    text-align: left;
+}
+
+/* Estilo para el color de acento en el título */
+.color-acento {
+    color: #ff7300; /* Puedes cambiar este color por el que desees */
+}
+
+/* Estilos para los espacios de entrada */
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+    
+
+/* Estilos para el botón de enviar */
+#contacto input[type="submit"] {
+    background-color: #af784c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo del botón al pasar el cursor por encima */
+#contacto input[type="submit"]:hover {
+    background-color: #943f0a;
+}
+button :hover{
+    background-color:rgb(65, 38, 3)
+ }
+
+
+ 
+}
+
+
+   
+       
+   
+
+
+
+
+
+   

@@ -1,0 +1,102 @@
+ <!-- PLANTILLA DE PAGINA WEB PORTAFOLIO ESTRUCTURA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Nikole Villalobos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="javascript" href="index.js">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <p class="logo ">Nikole Villalobos</p>
+<!-- Esta es la parte del menu-->
+<div class="container">
+    
+<nav>
+    <a href="#hero">Inicio</a>
+    <a href ="#portafolio">Portafolio</a>
+    <a href="#sobremi">Sobre mí</a>  
+    <a href="#contacto"> Contáctame</a>
+    
+</nav>
+</div>
+</header>
+
+
+<!-- Esta es la parte de la imagen del principio-->
+    <section id="hero">
+<button id="portafoliop"> Ver mi Portafolio</button>
+    </section>
+    
+
+    <section id="sobremi">
+        <div class="container">
+            <div class="texto">
+    <h2>Sobre  mí</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing <br>Rerum natus ea voluptas enim quos veniam ducimus nisi esse dolor <br> neque autem nam reiciendis, perferendis suscipit explicabo libero, tempore minus quidem.</p>
+</div>
+</div>
+</section>
+<section id="portafolio">
+    <div class="container">
+        <h2>Portafolio</h2>
+        <div class="programas">
+            <div class="carta">
+                <h3>Lorem Ipsum</h3>
+            
+            </div>
+            <div class="carta">
+                <h3>Lorem Ipsum</h3>
+                
+            </div>
+            <div class="carta">
+                <h3>Lorem Ipsum</h3>
+                
+            </div>  
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contacto">
+    <div class="container">
+       <div class="titulo">
+    <h2><span class="color-acento">Contáctame</span></h2>
+    </div>
+    <form action="enviar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        
+        <input type="submit" value="Enviar">
+        </div>
+</section>
+
+
+<section id="socialmedia"> 
+    <div>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <p>&copy;Nikole Villalobos 2023</p>
+    </div>
+</footer>
+
+<script src="index.js"></script> 
+</body>
+
+</html>
+<!-- Este es un comentario en HTML -->
